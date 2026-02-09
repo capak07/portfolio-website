@@ -1,5 +1,4 @@
 import './App.css';
-import About from './components/About/About';
 import Home from './components/Home/Home';
 import Navbar from './components/NavBar/Navbar';
 import Footer from './components/Footer/Footer';
@@ -20,7 +19,6 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
           <Route path="/Resume" element={<Resume />} />
           <Route path="/project" element={<Projects />} />
         </Routes>

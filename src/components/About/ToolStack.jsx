@@ -9,7 +9,7 @@ import {
 } from "react-icons/si";
 import "./about.css";
 
-export default function Toolstack() {
+function Toolstack() {
   return (
     <Row className="toolstack">
       <Col xs={4} md={2} className="tech-icons">
@@ -30,3 +30,5 @@ export default function Toolstack() {
     </Row>
   );
 }
+
+export default Toolstack;

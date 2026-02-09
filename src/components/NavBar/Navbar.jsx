@@ -15,14 +15,12 @@ function NavBar() {
   const [expand, updateExpanded] = useState(false);
 
   return (
-    <nav className={styles.navbar}
+    <Navbar
+      className={styles.navbar}
       expanded={expand}
       fixed="top"
       expand="md"
     >
-      <div className={styles.navList}>
-        
-      </div>
       <Container className={styles.nav}>
         <Navbar.Brand className="d-flex" style={{height: "50px"}}>
           <h2 style={{color: "whitesmoke"}}> AK </h2>
@@ -84,7 +82,7 @@ function NavBar() {
           </Nav>
         </Navbar.Collapse>
       </Container>
-    </nav>
+    </Navbar>
   );
 }
 

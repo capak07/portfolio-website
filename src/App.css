@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,28 +25,29 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #00d4ff;
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 8px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: rgba(15, 20, 25, 0.5);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
-  border-radius: 12px;
+  background: linear-gradient(180deg, #00d4ff, #0084ff);
+  border-radius: 4px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
-  border-radius: 12px;
+  background: linear-gradient(180deg, #00d4ff, #0084ff);
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
 }
 
 @keyframes App-logo-spin {

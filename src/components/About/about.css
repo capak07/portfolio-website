@@ -1,5 +1,5 @@
   .about {
-    background-color: black;
+    background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 100%);
     color: white;
     height: 100%;
     width: 100%;
@@ -9,14 +9,13 @@
   .about-section {
     padding-top: 300px;
     padding-bottom: 300px;
-    background-color: var(--background);
-    color: var(--text);
+    background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 100%);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 15px;
     font-family: var(--fontStack);
     font-weight: var(--fontWeightRegular);
     transition: var(--durationM) ease;
     transition-property: background, opacity;
-    color: whitesmoke;
     width: 100%;
     overflow-x: hidden;
     font-size: 30px;
@@ -28,17 +27,17 @@
     align-items: center;
     justify-content: left;
     border-radius: 10px;
-    background-color: var(--background);
-    color: var(--text);
+    background: linear-gradient(135deg, rgba(40, 50, 70, 0.8), rgba(30, 40, 60, 0.8));
+    color: rgba(255, 255, 255, 0.9);
     font-size: 15px;
     font-family: var(--fontStack);
     font-weight: var(--fontWeightRegular);
     transition: var(--durationM) ease;
     transition-property: background, opacity;
-    color: whitesmoke;
     width: 100%;
     overflow-x: hidden;
     font-size: 30px;
+    border: 1px solid rgba(0, 212, 255, 0.2);
   }
 
   .about-activity {
@@ -67,21 +66,22 @@
     margin: 15px !important;
     padding: 10px !important;
     opacity: 0.93 !important;
-    border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+    border: 1.7px solid rgba(0, 212, 255, 0.3) !important;
     vertical-align: middle !important;
     text-align: center !important;
-    border-radius: 5px !important;
+    border-radius: 8px !important;
     display: table !important;
-    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+    box-shadow: 0 4px 12px rgba(0, 212, 255, 0.1) !important;
     overflow: hidden !important;
     transition: all 0.4s ease 0s !important;
+    background: rgba(0, 212, 255, 0.05) !important;
   }
 
   .blockquote-footer {
     padding-top: -5px;
     text-align: left;
     font-size: 25px;
-    color: #a588c0 !important;
+    color: #00d4ff !important;
     padding-bottom: 30px;
   }
 
@@ -94,7 +94,8 @@
   .tech-icons:hover {
     transform: scale(1.05) !important;
     overflow: hidden !important;
-    border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+    border: 2.2px solid rgba(0, 212, 255, 0.6) !important;
+    box-shadow: 0 8px 24px rgba(0, 212, 255, 0.2) !important;
   }
   .tech-icon-images {
     padding: 20px !important;
@@ -102,8 +103,8 @@
   }
 
   .project-heading {
-    color: whitesmoke !important;
+    color: white !important;
     font-size: 2.3em !important;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
     padding-top: 10px !important;
   }

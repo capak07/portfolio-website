@@ -12,21 +12,34 @@ const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
+        background: "linear-gradient(135deg, rgba(40, 50, 70, 0.9) 0%, rgba(30, 40, 60, 0.9) 100%)",
         color: "#fff",
         height: "100%",
+        border: "1px solid rgba(0, 212, 255, 0.2)",
+        borderRadius: "8px",
+        boxShadow: "0 8px 16px rgba(0, 212, 255, 0.1)",
+        padding: "20px"
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{ borderRight: "7px solid rgba(0, 212, 255, 0.3)" }}
       date={
         experience.date
       }
-      iconStyle={{ background: experience.iconBg, height: "16.5%", width: "5%"}}
+      iconStyle={{ 
+        background: "linear-gradient(135deg, #00d4ff, #0084ff)", 
+        height: "60px", 
+        width: "60px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        boxShadow: "0 0 20px rgba(0, 212, 255, 0.3)"
+      }}
       icon={
         <div className='exp-card'>
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className='logo w-[90%] h-[90%] object-contain'
+            className='logo'
+            style={{ width: "90%", height: "90%", objectFit: "contain" }}
           />
         </div>
       }
@@ -58,7 +71,10 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <div className='exp'>
+      <div className='exp' style={{ paddingTop: "100px" }}>
+        <h1 style={{ textAlign: "center", color: "#fff", marginBottom: "3rem", fontSize: "2rem", fontWeight: "700" }}>
+          My <strong style={{ background: "linear-gradient(135deg, #00d4ff, #0084ff)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Experience</strong>
+        </h1>
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard

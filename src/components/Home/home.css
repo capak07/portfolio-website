@@ -1,15 +1,15 @@
 /* home.css */
 
 .data-theme {
-    --background: oklch(17.76% 0 0);
-    --backgroundLight: oklch(21.78% 0 0);
-    --primary: oklch(84.42% 0.19 202.24);
-    --accent: oklch(84.42% 0.19 202.24);
-    --error: oklch(65.91% 0.249 13.76);
-    --text: var(--white);
-    --textTitle: var(--text);
-    --textBody: color-mix(in lab, var(--text) 80%, transparent);
-     --textLight: color-mix(in lab, var(--text) 60%, transparent);
+    --background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 100%);
+    --backgroundLight: rgba(20, 25, 35, 0.9);
+    --primary: #00d4ff;
+    --accent: #0084ff;
+    --error: #ff4444;
+    --text: #ffffff;
+    --textTitle: #00d4ff;
+    --textBody: rgba(255, 255, 255, 0.8);
+     --textLight: rgba(255, 255, 255, 0.6);
 }
 
 .wave {
@@ -36,14 +36,13 @@
 .home-section {
     padding-top: 300px;
     padding-bottom: 300px;
-    background-color: var(--background);
-    color: var(--text);
+    background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 100%);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 30px;
     font-family: var(--fontStack);
     font-weight: var(--fontWeightRegular);
     transition: var(--durationM) ease;
     transition-property: background, opacity;
-    color: whitesmoke;
     width: 100%;
     overflow-x: hidden;
     font-size: 30px;
@@ -59,14 +58,13 @@
 .home-about-section {
     padding-top: 300px;
     padding-bottom: 300px;
-    background-color: var(--background);
-    color: var(--text);
+    background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 100%);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 30px;
     font-family: var(--fontStack);
     font-weight: var(--fontWeightRegular);
     transition: var(--durationM) ease;
     transition-property: background, opacity;
-    color: whitesmoke;
     width: 100%;
     overflow-x: hidden;
     font-size: 20px;
@@ -82,7 +80,6 @@
     font-weight: var(--fontWeightRegular);
     transition: var(--durationM) ease;
     transition-property: background, opacity;
-    color: whitesmoke;
     width: 100%;
     overflow-x: hidden;
     font-size: 20px;
@@ -96,10 +93,10 @@
 
  .Typewriter__wrapper {
     font-size: 1.0em !important;
-    color: #be6adf !important;
+    color: #00d4ff !important;
     font-weight: 600 !important;
   }
   .Typewriter__cursor {
     font-size: 1.0em !important;
-    color: #b562d6 !important;
+    color: #0084ff !important;
   }

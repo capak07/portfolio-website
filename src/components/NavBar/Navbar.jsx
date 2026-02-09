@@ -22,9 +22,6 @@ function NavBar() {
       expand="md"
     >
       <Container className={styles.nav}>
-        <Navbar.Brand className="d-flex" style={{height: "50px"}}>
-          <h2 style={{color: "whitesmoke"}}> AK </h2>
-        </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {

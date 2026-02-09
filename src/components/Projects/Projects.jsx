@@ -13,8 +13,8 @@ function Projects() {
         <p style={{ color: "rgba(255, 255, 255, 0.7)", textAlign: "center", marginBottom: "50px" }}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ display: "flex", flexDirection: "row", gap: "30px", justifyContent: "center", paddingBottom: "50px", flexWrap: "wrap" }}>
-          <Col md={5} lg={4} style={{ minWidth: "300px" }}>
+        <Row className="projects-grid">
+          <Col md={4} lg={4} sm={6} xs={12}>
             <ProjectCard
               imgPath={require("../../Assets/Projects/web-app.png")}
               isBlog={false}
@@ -24,7 +24,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={5} lg={4} style={{ minWidth: "300px" }}>
+          <Col md={4} lg={4} sm={6} xs={12}>
             <ProjectCard
             imgPath={require("../../Assets/Projects/finance-app.png")}
               isBlog={false}
@@ -34,7 +34,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={5} lg={4} style={{ minWidth: "300px" }}>
+          <Col md={4} lg={4} sm={6} xs={12}>
             <ProjectCard
               imgPath={require("../../Assets/Projects/ai-tictactoe.png")}
               isBlog={false}
@@ -44,7 +44,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={5} lg={4} style={{ minWidth: "300px" }}>
+          <Col md={4} lg={4} sm={6} xs={12}>
             <ProjectCard
               imgPath={require("../../Assets/Projects/leapfrog-triejoin.png")}
               isBlog={false}
@@ -57,8 +57,8 @@ function Projects() {
         <h1 className="project-heading">
           My <strong className="purple"> Open Source </strong> Contributions
         </h1>
-        <Row style={{ display: "flex", flexDirection: "row", gap: "30px", justifyContent: "center", paddingBottom: "50px", flexWrap: "wrap" }}>
-        <Col md={5} lg={4} style={{ minWidth: "300px" }}>
+        <Row className="projects-grid">
+        <Col md={4} lg={4} sm={6} xs={12}>
             <ProjectCard
               isBlog={false}
               title="movie-web"
@@ -67,7 +67,7 @@ function Projects() {
               imgPath="https://avatars.githubusercontent.com/u/26071571?s=48&v=4"
             />
           </Col>
-          <Col md={5} lg={4} style={{ minWidth: "300px" }}>
+          <Col md={4} lg={4} sm={6} xs={12}>
             <ProjectCard
               isBlog={false}
               title="Sympy"
@@ -76,7 +76,7 @@ function Projects() {
               imgPath="https://avatars.githubusercontent.com/u/260832?s=48&v=4"
             />
           </Col>
-          <Col md={5} lg={4} style={{ minWidth: "300px" }}>
+          <Col md={4} lg={4} sm={6} xs={12}>
             <ProjectCard
               isBlog={false}
               title="langchain"
@@ -85,7 +85,7 @@ function Projects() {
               imgPath="https://avatars.githubusercontent.com/u/166417795?s=48&v=4"
             />
           </Col>
-          <Col md={5} lg={4} style={{ minWidth: "300px" }}>
+          <Col md={4} lg={4} sm={6} xs={12}>
             <ProjectCard
               isBlog={false}
               title="gson"
@@ -94,7 +94,7 @@ function Projects() {
               inPath="https://avatars.githubusercontent.com/u/1342004?s=48&v=4"
             />
           </Col>
-          <Col md={5} lg={4} style={{ minWidth: "300px" }}>
+          <Col md={4} lg={4} sm={6} xs={12}>
             <ProjectCard
               isBlog={false}
               title="duckdb"
@@ -103,7 +103,7 @@ function Projects() {
               imgPath= "https://avatars.githubusercontent.com/u/82039556?s=48&v=4"
             />
           </Col>
-          <Col md={5} lg={4} style={{ minWidth: "300px" }}>
+          <Col md={4} lg={4} sm={6} xs={12}>
             <ProjectCard
               isBlog={false}
               title="exa"

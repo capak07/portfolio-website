@@ -12,25 +12,29 @@ import {
 } from "react-icons/si";
 import "./about.css";
 
-function Toolstack() {
+function ToolstackList() {
+  const tools = [
+    { name: "macOS", icon: SiMacos },
+    { name: "Visual Studio Code", icon: SiVisualstudiocode },
+    { name: "Postman", icon: SiPostman },
+    { name: "Slack", icon: SiSlack },
+    { name: "Vercel", icon: SiVercel },
+  ];
+
   return (
-    <Row className="toolstack">
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
-      </Col>
-    </Row>
+    <div className="tools-list-container">
+      {tools.map((tool, index) => {
+        const IconComponent = tool.icon;
+        return (
+          <div key={index} className="tool-item">
+            <div className="tool-icon-wrapper">
+              <IconComponent className="tool-icon-single" />
+            </div>
+            <span className="tool-name">{tool.name}</span>
+          </div>
+        );
+      })}
+    </div>
   );
 }
 
@@ -64,7 +68,7 @@ function About() {
         <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use
         </h1>
-        <Toolstack />
+        <ToolstackList />
       </Container>
     </Container>
   );
